@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" style="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>DAFOT Assignment 2</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/scripts.js"></script>
+</head>
+<body cz-shortcut-listen="true">
+
+<!-- HEADER -->
+<header>
+    <!-- header wrapper -->
+    <div class="wrapper cf">
+        <div id="logo">
+            <a href="https://www3.elearning.rwth-aachen.de/ws14/14ws-14118/collaboration/Lists/WikiList1/Group%20DAFOT.aspx">
+                <img src="./img/logo.png" alt="">
+            </a>
+        </div>
+    </div>
+    <!-- ENDS header wrapper -->
+    <!-- nav -->
+    <nav>
+        <div>
+            <ul id="nav" class="menu">
+                <li><a href="https://www3.elearning.rwth-aachen.de/ws14/14ws-14118/Dashboard.aspx">WEB TECHNOLOGIES</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- ends nav -->
+</header>
+<!-- ENDS HEADER -->
+
+<!-- MAIN -->
+<div role="main" id="main">
+    <div class="wrapper">
+        <!-- SLIDER -->
+        <section id="slider-wrapper" class="theme-default theme-project theme-home">
+            <div id="slider">
+                <div id="mask" style="height: 390px">
+                    <ul>
+                        <li id="first" class="first-animation">
+                            <img src="img/dawn.jpg"/>
+                        </li>
+                        <li id="second" class="second-animation">
+                            <img src="img/edge.png"/>
+                        </li>
+                        <li id="third" class="third-animation">
+                            <img src="img/intersellar_logo.png"/>
+                        </li>
+                        <li id="fourth" class="fourth-animation">
+                            <img src="img/starwars.jpg"/>
+                        </li>
+                        <li id="fifth" class="fifth-animation">
+                            <img src="img/hobbit_logo.png"/>
+                        </li>
+                    </ul>
+                </div>
+                <div class="progress-bar"></div>
+            </div>
+        </section>
+        <!-- ENDS SLIDER -->
+        <!-- Cinema list -->
+        <section class="cinema-list">
+            <div class="headline">Choose your cinema</div>
+            <ul class="feature" style="overflow: hidden; position: relative; height: 412px; margin-bottom: 20px">
+                <li class="cinema" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);">
+                    <a href="" id="IMAX" class="thumb" onclick="chooseCinemaOnButtonSelect(this);return false;" data-name="IMAX">
+                        <img src="./img/imax.png" alt="">
+                        <div class="date"><span class="d">IMAX</span></div>
+                    </a>
+                    <div class="caption"><b>Bringing the world inside!</b></div>
+                </li>
+                <li class="cinema" style="position: absolute; left: 0px; top: 0px; transform: translate3d(320px, 0px, 0px);">
+                    <a href="#" id="Red Eye" class="thumb" onclick="chooseCinemaOnButtonSelect(this);return false;" data-name="Red Eye">
+                        <img src="./img/red_eye.png" alt="">
+                        <div class="date"><span class="d">Red Eye</span></div>
+                    </a>
+                    <div class="caption"><b>Movies the way they were meant to be.</b></div>
+                </li>
+                <li class="cinema" style="position: absolute; left: 0px; top: 0px; transform: translate3d(640px, 0px, 0px);">
+                    <a href="#" id="Lakes Outdoor" class="thumb" onclick="chooseCinemaOnButtonSelect(this);return false;" data-name="Lakes Outdoor">
+                        <img src="./img/lakes.png" alt="">
+                        <div class="date"><span class="d">Lakes Outdoor</span></div>
+                    </a>
+                    <div class="caption"><b>Bringing Hollywood to our theatre.</b></div>
+                </li>
+            </ul>
+            <button class="pomegranate-flat-button" onclick="chooseNearestCinema()">Find Nearest Cinema</button>
+        </section>
+        <!-- ENDS cinema list -->
+        <!-- Movies -->
+        <section class="movies">
+            <div class="headline">Choose your movie</div>
+            <ul class="feature no-left-margin">
+                <li class="cover">
+                    <a href="#" class="movie" onclick="chooseMovie(this);return false;" data-name="Fury">
+                    <img src="./img/fury.png" alt=""></a>
+                    <div class="movie-description">Fury</div>
+                </li>
+                <li class="cover">
+                    <a href="#" class="movie" onclick="chooseMovie(this);return false;" data-name="John Wick">
+                    <img src="./img/john_wick.png" alt=""></a>
+                    <div class="movie-description">John Wick</div>
+                </li>
+                <li class="cover">
+                    <a href="#" class="movie" onclick="chooseMovie(this);return false;" data-name="Mockingjay">
+                    <img src="./img/hunger_games.png" alt=""></a>
+                    <div class="movie-description">Mockingjay</div>
+                </li>
+                <li class="cover">
+                    <a href="#" class="movie" onclick="chooseMovie(this);return false;" data-name="Dracula Untold">
+                    <img src="./img/dracula.png" alt=""></a>
+                    <div class="movie-description">Dracula Untold</div>
+                </li>
+                <li class="cover">
+                    <a href="#" class="movie" onclick="chooseMovie(this);return false;" data-name="The Judge">
+                    <img src="./img/judge.png" alt=""></a>
+                    <div class="movie-description">The Judge</div>
+                </li>
+                <li class="cover">
+                    <a href="#" class="movie" onclick="chooseMovie(this);return false;" data-name="Intersellar">
+                    <img src="./img/intersellar.png" alt=""></a>
+                    <div class="movie-description">Intersellar</div>
+                </li>
+                <li class="cover">
+                    <a href="#" class="movie" onclick="chooseMovie(this);return false;" data-name="The Hobbit">
+                    <img src="./img/hobbit.png" alt=""></a>
+                    <div class="movie-description">The Hobbit</div>
+                </li>
+                <li class="cover">
+                    <a href="#" class="movie" onclick="chooseMovie(this);return false;" data-name="TMNT">
+                    <img src="./img/turtles.png" alt=""></a>
+                    <div class="movie-description">TMNT</div>
+                </li>
+                <li class="cover">
+                    <a href="#" class="movie" onclick="chooseMovie(this);return false;" data-name="The Equalizer">
+                    <img src="./img/equalizer.png" alt=""></a>
+                    <div class="movie-description">The Equalizer</div>
+                </li>
+                <li class="cover">
+                    <a href="#" class="movie" onclick="chooseMovie(this);return false;" data-name="Lucy">
+                    <img src="./img/lucy.png" alt=""></a>
+                    <div class="movie-description">Lucy</div>
+                </li>
+            </ul>
+        </section>
+        <!-- ENDS Movies -->
+        <!-- Reservation -->
+        <section class="reservation">
+            <div class="headline">Choose your seats</div>
+                <div id="canvas-container" class="central-container">
+                    <canvas id="can-reservation" width="600" height="400" class="dark-shadow">
+                        <script>initReservationCanvas();</script>
+                    </canvas>
+                </div>
+            <button id="buy-button" onclick="reserveSeats()" class="pomegranate-flat-button">Reserve seats</button>
+        </section>
+        <!-- ENDS Reservation -->
+        <!-- Contacts -->
+        <section class="contacts">
+            <div class="headline">Please enter your contact details</div>
+            <form name="contacts" action="fill" onsubmit="return false;" accept-charset="utf-8">
+                <div class="feature">
+                    <fieldset class="fields">
+                        <div class="form-group">
+                            <label for="firstname">First name :</label>  
+                            <input type="text" name="firstname" placeholder="Peter" size="20" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Last name : </label>  
+                            <input type="text" name="lastname" placeholder="Mustermann" size="20" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="usermail">Email :</label>  
+                            <input type="email" name="usermail" placeholder="example@email.com" size="20" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone :</label>  
+                            <input type="tel" name="phone" placeholder="0123 01234567" size="20" required>
+                        </div>
+                    </fieldset>
+                </div>
+                <input type="submit" class="pomegranate-flat-button" value="Confirm">
+            </form>
+        </section>
+        <!-- ENDS Contacts -->
+    </div>
+</div>
+<!-- ENDS MAIN -->
+<footer>
+    <!-- wrapper -->
+    <div class="wrapper cf">
+        <!-- social -->
+        <div class="sb-holder cf">
+            <ul id="social-bar" class="cf">
+                <li class="left-corner"></li>
+                <li><a href="http://www.facebook.com/" title="Become a fan"><img src="./img/Facebook.png"
+                                                                                 alt="Facebook"></a></li>
+                <li><a href="http://www.twitter.com/" title="Follow my tweets"><img src="./img/Twitter.png"
+                                                                                    alt="twitter"></a></li>
+                <li><a href="http://www.google.com/" title="Add to the circle"><img src="./img/Google+.png"
+                                                                                    alt="Google plus"></a></li>
+                <li class="right-corner"></li>
+            </ul>
+        </div>
+        <!-- ENDS social -->
+        <div id="footer-bottom">Assignment was made by <a href="#">DAFOT</a></div>
+    </div>
+    <!-- ENDS wrapper -->
+</footer>
+</body>
+</html>
